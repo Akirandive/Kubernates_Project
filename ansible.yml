@@ -4,6 +4,6 @@
   become: yes
   tasks: 
      - name: create new deployment
-       command: kubectl apply -f /home/mdm/Deployment.yml
+       command: kubectl apply -f /home/mdm/deployment.yml
      - name: create new service
-       command: kubectl apply -f /home/mdm/Service.yml
+       command: kubectl apply -f /home/mdm/service.yml
