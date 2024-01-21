@@ -1,5 +1,7 @@
 - hosts: dev[0]
-  become: true
+  user: mdm
+  connection: ssh
+  become: yes
   tasks: 
      - name: delete old deployment
        command: kubectl delete -f /home/mdm/Deployment.yml
