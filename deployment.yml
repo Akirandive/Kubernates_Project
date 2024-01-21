@@ -14,7 +14,10 @@ spec:
       spec:
        containers:
         - name: mrdevops
-          image: 99709970/tomcat9.1
+          image: 99709970/cicd_project_latest 
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
+
+
+99709970/cicd_project_latest
