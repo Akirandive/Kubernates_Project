@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: dev[0]
   become: true
   tasks: 
      - name: delete old deployment
