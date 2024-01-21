@@ -3,10 +3,6 @@
   connection: ssh
   become: yes
   tasks: 
-     - name: delete old deployment
-       command: kubectl delete -f /home/mdm/Deployment.yml
-     - name: delete old service
-       command: kubectl delete -f /home/mdm/Service.yml
      - name: create new deployment
        command: kubectl apply -f /home/mdm/Deployment.yml
      - name: create new service
